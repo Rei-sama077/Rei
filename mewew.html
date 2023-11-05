@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday Byy!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('dogs.gif'); 
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+            flex-direction: column;
+        }
+
+        .image-container img {
+            max-width: 500%; 
+            width: 1000px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .left-gif {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .right-gif {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .audio-player {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .overlay-gif {
+            position: absolute;
+            bottom: 0;
+            left: 50%; 
+            transform: translateX(-50%); 
+            
+        }
+
+        .custom-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+ .overlay-image {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Ensure it's above pug.gif */
+	   
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="left-gif">
+        <img src="flex.gif" alt="">
+    </div>
+
+    <div class="right-gif">
+        <img src="flex.gif" alt="">
+    </div>
+
+    <div class="image-container">
+        <img src="happy.gif" alt="Happy Birthday"> 
+    </div>
+
+    <div class="overlay-gif">
+        <img src="pug.gif" alt="Another GIF"style="max-width: 300px; height: auto;"> <!-- Adjust the dimensions here -->
+    </div>
+
+<div class="overlay-image">
+	 <a href="file:///E:/CIT%20Documents/College-2nd-year/Cpe/html/kwazy.html">
+        <img src="message.png" alt="Overlay Image" style="max-width: 100px; height: auto;"> 
+ </a>  <!-- Adjust the dimensions here -->
+    </div>
+
+    
+    <div class="custom-text">
+        (please click the screen)
+    </div>
+
+
+
+    <div class="audio-player">
+        <audio id="audioElement" controls>
+            <source src="better.mp3" type="audio/mpeg">
+           
+        </audio>
+    </div>
+
+    <script>
+        document.addEventListener('click', function() {
+            var audio = document.getElementById('audioElement');
+            audio.play();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hallo :DD</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+	background-image: url('sakuras.gif'); 
+            background-size: cover;
+	flex-direction: column;
+       }
+
+   
+       .image-container {
+            margin-top: 20px; 
+            text-align: center; 
+        }
+
+        .image-container img {
+            max-width: 400%; 
+            width: 900px; 
+        }
+
+.overlay-text {
+            position: absolute;
+	    
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 20px;
+             text-align: justify;
+            color: black;
+	    z-index:2;
+                    
+            
+        }
+         .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 100%;
+            height: 100%;
+        
+  	     background-image: url('sakura.gif');
+            background-size: cover;
+            opacity: 0.5; /* Adjust the opacity as needed */
+            z-index: 1; /* Place the overlay image below the text */
+        }
+
+ .overlay-gif {
+            position: absolute;
+	    top:63%;
+	    bottom: 0%;     
+            left: 50%; 
+            transform: translateX(-50%); 	
+            
+		
+	   z-index: 3;
+
+        }
+
+    </style>
+</head>
+<body>
+
+
+	
+
+ <div class="image-container">
+  <img src="scroll.png" alt="Description"> 
+<div class="overlay-text">
+Dear Baby(Byy),
+<br><br>Uhh.. Happy 20th Birthday XD!! Kwazy, I had a lot of fun while making this program. <br> There's a lot of stuff that I didn't include because di ma fit :(( and it got messy (skill issue). <br> Well, anyways, I was hoping that you like my gift :3 and also hoping that you had fun on your birthday. <br> Once again, Happy Birthday and hehe, I love you. </div>
+<div class="overlay-gif">
+        <img src="kiss.jpg" alt="Another GIF"style="max-width: 200px; height: auto;"> <!-- Adjust the dimensions here -->
+    </div>
+	
+        <div class="overlay-image"></div>
+    </div>
+
+
+
+ 
+ 
+
+</body>
+</html>

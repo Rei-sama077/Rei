@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hallo :DD</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+	background-image: url('sekai.png'); 
+            background-size: cover;
+	flex-direction: column;
+       }
+
+   
+       .image-container {
+            margin-top: 20px; 
+            text-align: center; 
+        }
+
+        .image-container img {
+            max-width: 500%; 
+            width: 1000px; 
+        }
+
+        .link-box {
+            border: 2px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+
+        .link-box a {
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+
+	<div class="image-container">
+        <img src="scroll.png" alt="Description"> 
+    </div>
+
+
+
+  
+    
+
+</body>
+</html>
